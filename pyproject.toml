@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "testing"
+version = "0.1.0"
+description = ""
+authors = ["Christon Ragavan Nadar <christonragavan@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "3.10"
+matplotlib = "^3.5.3"
+numpy = "^1.23.1"
+pandas = "^1.4.3"
+pydantic = "^1.9.2"
+path = "^16.4.0"
+coverage = "6.3.3"
+pytest = "7.1.2"
+
+[tool.poetry.dev-dependencies]
+coverage = "6.3.3"
+pytest = "7.1.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
