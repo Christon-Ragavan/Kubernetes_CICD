@@ -1,0 +1,20 @@
+version: "3.4"
+services:
+  app:
+    build:
+      context: .
+      target: main_environment
+    volumes:
+      - ./src:/app/src
+    command: bash -c 'python main.py'
+
+  test:
+    build:
+      context: .
+      target: main_environment
+    volumes:
+      - ./src:/app/src
+    command: bash -c '
+      printf "Tests results\n"
+      && pytest /app/src/test'
+
